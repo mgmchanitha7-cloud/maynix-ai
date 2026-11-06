@@ -1,0 +1,436 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MAYNIX AI | Digital Future</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <header class="header">
+
+        <a href="#home" class="logo">
+            MAYNIX<span>AI.</span>
+        </a>
+
+        <nav class="navbar" id="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <button class="login-btn" id="openLogin">
+            LOGIN
+        </button>
+
+        <button class="menu-btn" id="menuBtn">
+            ☰
+        </button>
+
+    </header>
+
+
+    <!-- HOME SECTION -->
+    <section class="home" id="home">
+
+        <div class="home-content">
+
+            <p class="subtitle">
+                WELCOME TO THE FUTURE
+            </p>
+
+            <h1>
+                ENTER THE <br>
+                <span>WORLD OF AI</span>
+            </h1>
+
+            <p class="description">
+                Discover a new digital experience with
+                artificial intelligence, creativity and
+                modern technology.
+            </p>
+
+            <a href="#services" class="main-btn">
+                EXPLORE NOW →
+            </a>
+
+        </div>
+
+        <div class="glow-circle"></div>
+
+    </section>
+
+
+    <!-- ABOUT SECTION -->
+    <section class="section" id="about">
+
+        <p class="subtitle">WHO WE ARE</p>
+
+        <h2>
+            ABOUT <span>MAYNIX</span>
+        </h2>
+
+        <p class="section-description">
+            MAYNIX AI is a modern digital platform
+            designed to explore creativity, technology
+            and artificial intelligence.
+        </p>
+
+    </section>
+
+
+    <!-- SERVICES SECTION -->
+    <section class="section services" id="services">
+
+        <p class="subtitle">WHAT WE OFFER</p>
+
+        <h2>
+            OUR <span>SERVICES</span>
+        </h2>
+
+        <div class="service-container">
+
+            <div class="service-card">
+                <h3>AI TECHNOLOGY</h3>
+                <p>
+                    Explore the power of artificial intelligence.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <h3>WEB DESIGN</h3>
+                <p>
+                    Modern and professional website experiences.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <h3>DIGITAL DESIGN</h3>
+                <p>
+                    Creative digital graphics and artwork.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- GALLERY SECTION -->
+<section class="section" id="gallery">
+
+    <p class="subtitle">OUR CREATIONS</p>
+
+    <h2>
+        IMAGE <span>GALLERY</span>
+    </h2>
+
+    <div class="gallery-container">
+
+        <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=700" alt="AI Technology">
+            <div class="gallery-caption">AI TECHNOLOGY</div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=700" alt="Future Technology">
+            <div class="gallery-caption">FUTURE TECH</div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?w=700" alt="Digital Art">
+            <div class="gallery-caption">DIGITAL ART</div>
+        </div>
+
+    </div>
+
+</section>
+
+    
+<!-- CONTACT SECTION -->
+<section class="section contact" id="contact">
+
+    <p class="subtitle">GET IN TOUCH</p>
+
+    <h2>
+        CONTACT <span>US</span>
+    </h2>
+
+    <p class="section-description">
+        Have a question or want to work with us?
+        Feel free to contact MAYNIX AI.
+    </p>
+
+    <div class="contact-container">
+
+        <div class="contact-card">
+            <div class="contact-icon">📱</div>
+            <h3>WHATSAPP</h3>
+            <p>071 2419 019</p>
+            <a href="https://wa.me/94712419019"
+               target="_blank"
+               class="main-btn">
+                MESSAGE ON WHATSAPP →
+            </a>
+        </div>
+
+        <div class="contact-card">
+            <div class="contact-icon">✉️</div>
+            <h3>EMAIL</h3>
+            <p>mgicgamage@gmail.com</p>
+            <a href="mailto:mgicgamage@gmail.com"
+               class="main-btn">
+                SEND EMAIL →
+            </a>
+        </div>
+
+        <div class="contact-card">
+            <div class="contact-icon">☎️</div>
+            <h3>CALL US</h3>
+            <p>071 2419 019</p>
+            <a href="tel:+94712419019"
+               class="main-btn">
+                CALL NOW →
+            </a>
+        </div>
+
+    </div>
+
+</section>
+
+    <footer class="footer">
+
+        <h3>MAYNIX<span>AI.</span></h3>
+
+        <p>
+            © 2026 MAYNIX AI. ALL RIGHTS RESERVED.
+        </p>
+
+        <p>POWERED BY INNOVATION.</p>
+
+    </footer>
+
+
+    
+
+
+<!-- LOGIN & SIGNUP SYSTEM -->
+
+<div class="auth-overlay" id="authModal" hidden>
+
+    <div class="auth-card">
+
+        <button class="auth-close" id="closeAuth">×</button>
+
+        <h2>MAYNIX<span>AI.</span></h2>
+
+        <p class="auth-subtitle">MEMBER ACCESS</p>
+
+        <div class="auth-tabs">
+            <button id="loginTab" class="active">LOGIN</button>
+            <button id="signupTab">SIGN UP</button>
+        </div>
+
+        <form id="loginForm">
+
+            <input
+                type="email"
+                id="loginEmail"
+                placeholder="Email Address"
+                required
+            >
+
+            <input
+                type="password"
+                id="loginPassword"
+                placeholder="Password"
+                required
+            >
+
+            <button type="submit" class="main-btn">
+                LOGIN NOW
+            </button>
+
+        </form>
+
+        <form id="signupForm" hidden>
+
+            <input
+                type="text"
+                id="signupName"
+                placeholder="Full Name"
+                required
+            >
+
+            <input
+                type="email"
+                id="signupEmail"
+                placeholder="Email Address"
+                required
+            >
+
+            <input
+                type="password"
+                id="signupPassword"
+                placeholder="Create Password (6+ characters)"
+                minlength="6"
+                required
+            >
+
+            <button type="submit" class="main-btn">
+                CREATE ACCOUNT
+            </button>
+
+        </form>
+
+        <p id="authMessage" class="auth-message"></p>
+
+        <p class="demo-warning">
+            DEMO ACCOUNT ONLY. Do not use your real password.
+        </p>
+
+    </div>
+</div>
+
+
+<!-- USER DASHBOARD -->
+
+<section class="section dashboard" id="dashboard" hidden>
+
+    <p class="subtitle">CONTROL CENTER</p>
+
+    <h2>MY <span>DASHBOARD</span></h2>
+
+    <div class="dashboard-box">
+
+        <h3 id="welcomeName">Welcome!</h3>
+
+        <p id="dashboardEmail"></p>
+
+        <p class="dashboard-status">
+            ● DEMO ACCOUNT ACTIVE
+        </p>
+
+    </div>
+
+    <button class="main-btn" id="logoutBtn">
+        LOG OUT
+    </button>
+
+</section>
+
+
+<!-- PROFESSIONAL DASHBOARD -->
+
+<section class="section dashboard" id="dashboard" hidden>
+
+    <p class="subtitle">MAYNIX CONTROL CENTER</p>
+
+    <h2>MY <span>DASHBOARD</span></h2>
+
+    <div class="dashboard-box">
+
+        <div class="dashboard-avatar">M</div>
+
+        <h3 id="welcomeName">Welcome!</h3>
+
+        <p id="dashboardEmail"></p>
+
+        <p class="dashboard-status">
+            ● ACCOUNT ACTIVE
+        </p>
+
+    </div>
+
+    <div class="dashboard-stats">
+
+        <div class="stat-card">
+            <h3>01</h3>
+            <p>MY ACCOUNT</p>
+        </div>
+
+        <div class="stat-card">
+            <h3>AI</h3>
+            <p>AI ASSISTANT</p>
+        </div>
+
+        <div class="stat-card">
+            <h3>24/7</h3>
+            <p>AVAILABLE</p>
+        </div>
+
+    </div>
+
+    <button class="main-btn" id="logoutBtn">
+        LOG OUT →
+    </button>
+
+</section>
+
+<!-- AI CHATBOT -->
+
+<div class="chat-widget">
+
+    <button class="chat-button" id="chatToggle">
+        ✦ MAYNIX AI
+    </button>
+
+    <div class="chat-panel" id="chatPanel" hidden>
+
+        <div class="chat-header">
+
+            <div>
+                <h3>MAYNIX AI</h3>
+                <p>Demo Assistant</p>
+            </div>
+
+            <button id="closeChat">×</button>
+
+        </div>
+
+        <div class="chat-messages" id="chatMessages">
+
+            <div class="bot-message">
+                Hello! Welcome to MAYNIX AI.
+                How can I help you today?
+            </div>
+
+        </div>
+
+        <form id="chatForm">
+
+            <input
+                type="text"
+                id="chatInput"
+                placeholder="Ask something..."
+                required
+            >
+
+            <button type="submit">➤</button>
+
+        </form>
+
+    </div>
+
+</div>
+
+<div id="toast" class="toast"></div>
+
+<!-- IMAGE PREVIEW -->
+<div class="image-preview" id="imagePreview" hidden>
+    <button id="closePreview" class="preview-close">×</button>
+    <img id="previewImage" src="" alt="Gallery Preview">
+    <p id="previewCaption"></p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
